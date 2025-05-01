@@ -309,29 +309,29 @@ function katanimasi2() {
     teks4.style = "font-size:19px;font-weight:400;text-align:center;line-height:1.5em";
     
     new TypeIt("#teks4", {
-        speed: 26, // typing speed
-        deleteSpeed: 13, // deletion speed
+        speed: 39, // typing speed
+        deleteSpeed: 25, // deletion speed
         cursor: true
     })
     .type('According to <b>biology</b>, you are<br> <b><span class="pink">7%</span> blood</b>~')
-    .pause(700) // pause 0.7 second after typing finishes
-    .delete(78)
-    .pause(400) // pause before next text
+    .pause(900) // pause 0.7 second after typing finishes
+    .delete(88)
+    .pause(500) // pause before next text
     .type('According to <b>chemistry</b>, you are<br> <b><span class="pink">70%</span> water</b>~')
-    .pause(700)
+    .pause(900)
     .delete()
-    .pause(400)
+    .pause(500)
     .type('According to <b>physics</b>, you are<br> <b><span class="pink">99%</span> empty space</b>~')
-    .pause(700)
+    .pause(900)
     .delete()
-    .pause(400)
+    .pause(500)
     .exec(() => {
         teks4.style = "font-size:18px;font-weight:400;text-align:left;line-height:1.4em";
     })
     .type('But <b>in my opinion</b>, you are<br><b><span class="pink">1000%</span> my love</b> 🫣❤️')
     .exec(() => {
         teks4.innerHTML = 'But <b>in my opinion</b>, you are<br><b><span class="pink">1000%</span> my love</b> 🫣❤️' + `<br><br><span id="teksLove"></span>`;
-        setTimeout(katanimasi3, 200);
+        setTimeout(katanimasi3, 500);
     })
     .go();
 }
